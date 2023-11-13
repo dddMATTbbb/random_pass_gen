@@ -1,4 +1,5 @@
 import random
+import os
 
 #all the characters
 ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -75,24 +76,29 @@ if option == "1":
         silebles = int(input("how much sileble(s)?: "))
         outcome = complete_random_symbool(silebles)
         print("your new password is: ", outcome)
+        os.system("pause")
 elif option == "2":
         silebles = int(input("how much sileble(s)?: "))
         outcome = complete_random(silebles)
         print("your new password is: ", outcome)
+        os.system("pause")
 elif option == "3":
         silebles = int(input("how much sileble(s)?: "))
         outcome = complete_random_nocapital(silebles)
         print("your new password is: ", outcome)
+        os.system("pause")
 elif option == "4":
         numbersINT = int(input("put in your numbers: "))
         numbersSTR = str(numbersINT)
         outcome = random_word()
         password = outcome + numbersSTR
         print("here is your new password: ", password)
+        os.system("pause")
 elif option == "5":
         word = input("choose your word: ")
         outcome = chooce_word_digit(word)
         print("your new password is: ", outcome)
+        os.system("pause")
 elif option == "debug":
         print(wordlist)
 elif option == "exit":
